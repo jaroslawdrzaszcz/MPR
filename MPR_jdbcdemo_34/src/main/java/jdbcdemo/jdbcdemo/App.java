@@ -14,7 +14,7 @@ public class App
     public static void main( String[] args )
     {
     	PersonRepository repository = new PersonRepository();
-    	//repository.createTable();
+    	repository.createTable();
     	
     	Person janek = new Person();
     	janek.setName("Jan");
