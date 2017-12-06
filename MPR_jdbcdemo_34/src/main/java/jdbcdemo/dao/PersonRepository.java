@@ -40,7 +40,6 @@ public class PersonRepository {
 		try {
 			connection = DriverManager.getConnection(url);
 			createTable = connection.createStatement();
-			createTable();
 			insert = connection.prepareStatement(insertSql);
 			update = connection.prepareStatement(updateSQL);
 			delete = connection.prepareStatement(deleteSQL);
